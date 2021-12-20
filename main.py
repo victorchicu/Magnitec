@@ -14,7 +14,7 @@ def detect_object():
     execution_path = os.getcwd()
     detector = VideoObjectDetection()
     detector.setModelTypeAsRetinaNet()
-    detector.setModelPath(os.path.join(execution_path, "ptm/resnet50_coco_best_v2.1.0.h5"))
+    detector.setModelPath(os.path.join(execution_path, "resources/resnet50_coco_best_v2.1.0.h5"))
     detector.loadModel()
     video_path = detector.detectObjectsFromVideo(
         camera_input=camera,
